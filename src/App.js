@@ -38,6 +38,11 @@ function App() {
               <Route path="/works/*" element={<Works />} />
               {/*  Route for each project */}
               <Route path="/project/:id" element={<ProjectDetailPage />} />
+
+            {/* Vielle technology */}
+              <Route path="/old-technology" element={<Error404Page />} />
+
+              {/* 404 page */}
               <Route path="*" element={<Error404Page />} />
             </Routes>
           )}
