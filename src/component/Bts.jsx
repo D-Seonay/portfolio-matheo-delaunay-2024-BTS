@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // Import des fichiers PDF à partir du répertoire public
-import ControlConformite1 from '../pdf/2024-DELAUNAY-Mathéo-SLAM-1.pdf';
-import ControlConformite2 from '../pdf/2024-DELAUNAY-Mathéo-SLAM-2.pdf';
-import PortefeuilleCompetences from '../pdf/2024-DELAUNAY-Mathéo-Portefeuille.pdf';
+import ControlConformite1 from '../pdf/2024-DELAUNAY-Matheo-SLAM-1.pdf';
+import ControlConformite2 from '../pdf/2024-DELAUNAY-Matheo-SLAM-2.pdf';
+import PortefeuilleCompetences from '../pdf/2024-DELAUNAY-Matheo-Portefeuille.pdf';
 
 // Conteneur centré pour le placement des cartes
 const CenteredContainer = styled.div`
