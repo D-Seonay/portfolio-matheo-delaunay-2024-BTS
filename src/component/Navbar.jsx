@@ -22,6 +22,11 @@ function Navbar() {
 				<Link theme={theme} href="/BTS" className={location.pathname === '/BTS' ? 'active' : ''}>
 					<p>/BTS</p>
 				</Link>
+				{/* Link page Veille Techno*/}
+				<Link theme={theme} href="/bts/veille-technologique" className={location.pathname === '/Veille-Techno' ? 'active' : ''}>
+					<p>/Veille-Techno</p>
+				</Link>
+
 				{/*Icon mail*/}
 				<Link href="mailto:matheodelaunay04@gmail.com" aria-label="Mail">
 					<Icons theme={theme}><IoMdMail /></Icons>

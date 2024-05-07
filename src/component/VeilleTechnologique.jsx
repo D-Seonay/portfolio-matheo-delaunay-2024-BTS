@@ -39,16 +39,28 @@ const Navigation = styled.nav`
   background: rgba(255, 255, 255, 0.9); // Transparence pour la navigation
   padding: 10px; // Espace interne
   z-index: 10; // Assure que la navigation reste au-dessus des autres éléments
+
+  // Réactivité pour les écrans plus petits
+  @media (max-width: 768px) {
+    flex-direction: column; // Colonne sur les petits écrans
+    align-items: center; // Centrer horizontalement
+  }
 `;
 
 const NavLink = styled(ScrollLink)`
-  color: #3498db; // Couleur des liens
+  color: #191919; // Couleur des liens
   text-decoration: none; // Pas de soulignement
   margin-right: 20px; // Espace entre les liens
-  transition: color 0.3s; // Transition douce
-
+  text-decoration: none; // Pas de soulignement
+  transition: text-decoration 0.3s ease-in-out; // Transition douce
   &:hover {
-    color: #2980b9; // Changement de couleur sur hover
+    color: #333; // Couleur sur hover
+    text-decoration: underline; // Soulignement sur hover
+  }
+
+  // Réactivité pour les écrans plus petits
+  @media (max-width: 768px) {
+    margin: 10px 0; // Espace autour des liens
   }
 `;
 
@@ -150,12 +162,12 @@ const SourcesTitle = styled.h2`
 
 // Liens vers les sources
 const SourceLink = styled.a`
-  color: #3498db; // Couleur des liens
+  color: #191919; // Couleur des liens
   text-decoration: none; // Pas de soulignement
   transition: color 0.3s; // Transition douce
 
   &:hover {
-    color: #2980b9; // Couleur sur hover
+    color: #33A; // Couleur sur hover
   }
 `;
 
