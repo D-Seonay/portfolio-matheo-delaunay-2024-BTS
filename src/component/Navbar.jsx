@@ -18,6 +18,10 @@ function Navbar() {
 				<Link theme={theme} href="/about" className={location.pathname === '/about' ? 'active' : ''}>
 					<p>/About-me</p>
 				</Link>
+				{/* Link page BTS*/}
+				<Link theme={theme} href="/BTS" className={location.pathname === '/BTS' ? 'active' : ''}>
+					<p>/BTS</p>
+				</Link>
 				{/*Icon mail*/}
 				<Link href="mailto:matheodelaunay04@gmail.com" aria-label="Mail">
 					<Icons theme={theme}><IoMdMail /></Icons>

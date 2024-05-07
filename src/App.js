@@ -6,6 +6,7 @@ import GlassBackground from './component/ui/GlassBackground';
 import Works from './component/Works';
 import CursorTracker from "./component/ui/CursorTracker";
 import AboutMe from "./component/AboutMe";
+import BTS from "./component/Bts";
 import Error404Page from "./component/Error404";
 import Footer from "./component/Footer";
 import ProjectDetailPage from './component/ProjectDetailPage';
@@ -39,8 +40,8 @@ function App() {
               {/*  Route for each project */}
               <Route path="/project/:id" element={<ProjectDetailPage />} />
 
-            {/* Vielle technology */}
-              <Route path="/old-technology" element={<Error404Page />} />
+            {/* veille technologique */}
+            <Route path="/bts" element={<BTS />} />
 
               {/* 404 page */}
               <Route path="*" element={<Error404Page />} />
