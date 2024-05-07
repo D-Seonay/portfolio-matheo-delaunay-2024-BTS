@@ -7,6 +7,7 @@ import Works from './component/Works';
 import CursorTracker from "./component/ui/CursorTracker";
 import AboutMe from "./component/AboutMe";
 import BTS from "./component/Bts";
+import VeilleTechnologique from "./component/VeilleTechnologique";
 import Error404Page from "./component/Error404";
 import Footer from "./component/Footer";
 import ProjectDetailPage from './component/ProjectDetailPage';
@@ -42,6 +43,7 @@ function App() {
 
             {/* veille technologique */}
             <Route path="/bts" element={<BTS />} />
+            <Route path="/bts/veille-technologique" element={<VeilleTechnologique />} />
 
               {/* 404 page */}
               <Route path="*" element={<Error404Page />} />

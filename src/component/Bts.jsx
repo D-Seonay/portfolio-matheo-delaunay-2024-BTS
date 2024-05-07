@@ -58,7 +58,7 @@ const Card = styled.a`
 const Bts = () => (
   <CenteredContainer>
     <CardGrid>
-      <Card href="/topic1" target="_blank" rel="noopener noreferrer">
+      <Card href="/bts/veille-technologique">
         <h2>Veille technologique</h2>
         <p>Introduction à la veille technologique.</p>
       </Card>
