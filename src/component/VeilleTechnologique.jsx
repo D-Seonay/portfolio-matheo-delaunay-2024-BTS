@@ -20,6 +20,13 @@ const PageContainer = styled.div`
   padding: 20px; // Espace autour du contenu
   font-family: 'Arial', sans-serif; // Police de base
   background: rgba(255, 255, 255, 0.7); // Fond avec transparence
+
+  // Réactivité pour les écrans plus petits
+
+  @media (max-width: 768px) {
+    margin-top: 100px; // Espace pour la navigation fixe
+    padding: 10px; // Espace plus petit pour les petits écrans
+  }
 `;
 
 // Titre principal de la page
@@ -33,9 +40,13 @@ const PageTitle = styled.h1`
 const Navigation = styled.nav`
   position: sticky; // Navigation fixée en haut
   display: flex; // Affichage en ligne
+  flex-direction: column; // Colonne pour les liens
   justify-content: space-around; // Espace égal entre les éléments
+  align-items: center; // Centrer verticalement
   width: 100%; // Largeur de la navigation
   top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Ombre légère
+  border-radius: 10px; // Coins arrondis
   background: rgba(255, 255, 255, 0.9); // Transparence pour la navigation
   padding: 10px; // Espace interne
   z-index: 10; // Assure que la navigation reste au-dessus des autres éléments
@@ -47,10 +58,32 @@ const Navigation = styled.nav`
   }
 `;
 
+// Liens de navigation
+const NavLinks = styled.div`
+  display: flex; // Affichage en ligne
+  justify-content: center; // Centrer horizontalement
+  align-items: center; // Centrer verticalement
+  
+  // Réactivité pour les écrans plus petits
+  @media (max-width: 768px) {
+    flex-direction: column; // Colonne sur les petits écrans
+    align-items: center; // Centrer horizontalement
+  }
+`;
+
+// Lien de navigation
+const NavLinkTitle = styled.h3`
+  font-size: 2rem; // Taille du titre
+  color: #333; // Couleur du texte
+  margin: 20px 0; // Espace autour du titre
+`;
+
+
 const NavLink = styled(ScrollLink)`
   color: #191919; // Couleur des liens
   text-decoration: none; // Pas de soulignement
   margin-right: 20px; // Espace entre les liens
+  margin: 20px;
   text-decoration: none; // Pas de soulignement
   transition: text-decoration 0.3s ease-in-out; // Transition douce
   &:hover {
@@ -282,68 +315,71 @@ const NothingOverview = () => (
 
     {/* Navigation interne */}
     <Navigation>
-      <NavLink 
-        to="section-presentation"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
+      <NavLinkTitle>Navigation</NavLinkTitle>
+      <NavLinks>
+        <NavLink
+          to="section-presentation"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
 
-        Présentation
-      </NavLink>
-      <NavLink 
-        to="section-products"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
-        Produits
-      </NavLink>
-      <NavLink
-        to="section-earphones"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
-        Écouteurs
+          Présentation
+        </NavLink>
+        <NavLink 
+          to="section-products"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
+          Produits
+        </NavLink>
+        <NavLink
+          to="section-earphones"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
+          Écouteurs
 
-      </NavLink>
-      <NavLink
-        to="section-philosophy"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
-        Philosophie
-      </NavLink>
-      <NavLink
-        to="section-partnership"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
-        Partenariat
-      </NavLink>
-      <NavLink
-        to="section-sources"
-        smooth={true}
-        duration={500}
-        spy={true}
-        exact="true"
-        offset={-70}
-      >
-        Sources
-      </NavLink>
+        </NavLink>
+        <NavLink
+          to="section-philosophy"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
+          Philosophie
+        </NavLink>
+        <NavLink
+          to="section-partnership"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
+          Partenariat
+        </NavLink>
+        <NavLink
+          to="section-sources"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-70}
+        >
+          Sources
+        </NavLink>
+      </NavLinks>
     </Navigation>
 
     <Section id="section-presentation">
