@@ -273,8 +273,8 @@ const MyTimeline = () => {
 
 									<LowContainer>
 
-										{event.report ? (
-											<Rapport theme={theme} href={event.report} target="_blank" rel="noopener noreferrer">
+										{event.rapport ? (
+											<Rapport theme={theme} href={event.rapport} target="_blank" rel="noopener noreferrer">
 												Lien vers le rapport
 											</Rapport>
 										) : (

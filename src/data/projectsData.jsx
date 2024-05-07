@@ -1,4 +1,4 @@
-import { Phototheque, CardFlipRevise, Pokedex, GestionnaireDeBibliotheque } from '../Images';
+import { Phototheque, CardFlipRevise, Pokedex, GestionnaireDeBibliotheque, Astraso } from '../Images';
 
 
 const projectsData = [
@@ -52,6 +52,19 @@ const projectsData = [
 		link: '',
 		linkGithub: 'https://github.com/D-Seonay/gestionnaire-de-bibliotheque',
 		// Autres détails du projet
+	},
+
+	{
+		id: '5',
+		title: 'Astraso',
+		date: 'Juin 2024',
+		description: 'Une application web réseau social pour la gestion des retards avec des posts et des commentaires.',
+		role: 'Développeur fullstack',
+		categorie: 'School BTS',
+		tech: 'Symfony, MySQL',
+		image: Astraso,
+		link: '',
+		linkGithub: 'https://github.com/Kidoly/Astraso',
 	}
 	// Ajoutez d'autres projets ici
 ];

@@ -323,6 +323,7 @@ export const EmblaSlideTitle = styled.h2`
   color: #fff;
   text-align: center;
   margin-bottom: 2rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
   
     @media (max-width: 768px) {
     font-size: 3rem;
@@ -352,6 +353,7 @@ export const EmblaSlideLink = styled.a`
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 `;
 
 

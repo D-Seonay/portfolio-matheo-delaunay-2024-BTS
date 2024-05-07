@@ -95,6 +95,7 @@ const ProjectContainerData = styled.div`
 const ProjectTitle = styled.h2`
   color : ${props => (props.theme === 'dark' ? '#fff' : '#000')};
   font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
     font-size: 3rem;
