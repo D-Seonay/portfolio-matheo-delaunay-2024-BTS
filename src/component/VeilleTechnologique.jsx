@@ -197,6 +197,7 @@ const SourcesTitle = styled.h2`
 const SourceLink = styled.a`
   color: #191919; // Couleur des liens
   text-decoration: none; // Pas de soulignement
+  overflow-wrap: break-word; // Coupe les liens longs
   transition: color 0.3s; // Transition douce
 
   &:hover {
