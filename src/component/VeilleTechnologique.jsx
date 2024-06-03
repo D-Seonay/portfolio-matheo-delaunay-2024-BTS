@@ -243,6 +243,27 @@ const ScrollToTopButton = styled(ScrollLink)`
   }
 `;
 
+const SectionUl = styled.ul`
+  padding: 0; // Pas de marge
+  margin: 0; // Pas de marge
+`;
+
+
+const SectionLi = styled.li`
+  font-size: 1.2rem; // Taille de la description
+  line-height: 1.5; // Espacement entre les lignes
+  color: #555; // Couleur du texte
+  text-align: justify; // Justifier le texte
+  flex-direction: column;
+  align-items: center; // Centrer horizontalement
+  margin-bottom: 10px; // Espace entre les éléments
+`;
+
+const SectionSpan = styled.span`
+  font-weight: bold; // Texte en gras
+`;
+
+
 const Sources = () => (
   <SourcesSection>
     <SourcesTitle>Sources pour en savoir plus sur Nothing :</SourcesTitle>
@@ -382,8 +403,7 @@ const NothingOverview = () => (
         </NavLink>
       </NavLinks>
     </Navigation>
-
-    <Section id="section-presentation">
+    <Section id="section-presentati</Section>on">
       <SectionTitle>Présentation de Nothing</SectionTitle>
       <SectionDescription>
         Nothing, fondée en 2021 par Carl Pei, co-fondateur de OnePlus, a suscité un grand intérêt dans le monde de la technologie grand public en peu de temps. Dès ses débuts, la marque s'est démarquée par son esthétique minimaliste et transparente, son expérience utilisateur intuitive, et ses prix abordables.
@@ -448,6 +468,16 @@ const NothingOverview = () => (
     </Section>
 
     <Section id="section-sources">
+    <SectionTitle>Processus de Veille Technologique</SectionTitle>
+    <SectionDescription>
+      <SectionUl></SectionUl>
+        <SectionLi>Sélection des Sources : J'ai utilisé <SectionSpan>Google Dataset</SectionSpan> pour rechercher des articles, avis, commentaires, et rapports de marché sur Nothing.</SectionLi>
+        <SectionLi>Collecte et Nettoyage des Données : J'ai téléchargé les datasets pertinents, éliminé les doublons et les erreurs, et normalisé les données.</SectionLi>
+        <SectionLi>Analyse des Données : J'ai employé des outils de traitement de texte et de visualisation pour analyser les sentiments et identifier les tendances.</SectionLi>
+        <SectionLi>Interprétation des Résultats : La marque <SectionSpan>Nothing</SectionSpan> est perçue positivement, avec une forte appréciation pour son design et son innovation.</SectionLi>
+      <SectionUl></SectionUl> 
+    </SectionDescription>
+
       <Sources />
     </Section>
     {/* Bouton de défilement vers le haut */}
