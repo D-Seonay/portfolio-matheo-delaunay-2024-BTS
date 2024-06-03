@@ -52,7 +52,7 @@ const WorkPreviewLink = styled.a`
 `;
 
 const WorkPreviewImage = styled.img`
-  width: 12vw; /* Taille de l'aperçu du travail */
+  width: 10vw; /* Taille de l'aperçu du travail */
   height: auto; /* Maintenir le ratio hauteur-largeur */
   display: inline-block; /* Aligner l'image horizontalement avec le texte */
   filter: grayscale(100%); 

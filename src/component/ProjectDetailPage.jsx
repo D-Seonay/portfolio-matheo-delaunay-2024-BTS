@@ -273,6 +273,10 @@ const ProjectPage = () => {
                     <ProjectDescriptionText theme={theme}>{project.role}</ProjectDescriptionText>
                   </ProjectRole>
                   <ProjectTech>
+                    <ProjectDescriptionTitleH4 theme={theme}>Category :</ProjectDescriptionTitleH4>
+                    <ProjectDescriptionText theme={theme}>{project.category}</ProjectDescriptionText>
+                  </ProjectTech>
+                  <ProjectTech>
                     <ProjectDescriptionTitleH4 theme={theme}>Technologies :</ProjectDescriptionTitleH4>
                     <ProjectDescriptionText theme={theme}>{project.tech}</ProjectDescriptionText>
                   </ProjectTech>
