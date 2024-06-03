@@ -63,16 +63,16 @@ const Bts = () => (
         <p>Introduction à la veille technologique.</p>
       </Card>
       <Card href={ControlConformite1} target="_blank" rel="noopener noreferrer">
-        <h2>Portefeuille de compétences</h2>
-        <p>Les compétences à acquérir au cours de ma formation.</p>
+        <h2>Contrôle de conformité 1</h2>
+        <p>Contrôle de conformité n°1 réalisé en BTS.</p>
       </Card>
       <Card href={ControlConformite2} target="_blank" rel="noopener noreferrer">
-        <h2>Contrôle de conformité 1</h2>
-        <p>Comment réaliser un contrôle de conformité.</p>
+        <h2>Contrôle de conformité 2</h2>
+        <p>Contrôle de conformité n°2 réalisé en BTS.</p>
       </Card>
       <Card href={PortefeuilleCompetences} target="_blank" rel="noopener noreferrer">
         <h2>Portefeuille de compétences</h2>
-        <p>Les compétences à acquérir.</p>
+        <p>Les compétences à acquérir au cours de ma formation.</p>
       </Card>
     </CardGrid>
   </CenteredContainer>
