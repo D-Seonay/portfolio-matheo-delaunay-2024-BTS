@@ -31,9 +31,6 @@ function App() {
         <Router>
           <Navbar />
           <CursorTracker />
-          {isLoading ? (
-            <Loading /> // Affiche le composant de chargement pendant le chargement initial
-          ) : (
             <Routes>
               <Route path="/" element={<Works />} />
               <Route path="/about" element={<AboutMe />} />
@@ -48,7 +45,6 @@ function App() {
               {/* 404 page */}
               <Route path="*" element={<Error404Page />} />
             </Routes>
-          )}
           <Footer />
         </Router>
       </GlassBackground>
