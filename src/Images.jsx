@@ -1,6 +1,6 @@
 import AppPictures from './img/projets/AppPictures.jpg';
 import AppWeather from './img/projets/AppWeather.jpg';
-import Astraso from './img/projets/Astraso.jpg';
+import Astraso from './img/projets/AppAstraso.jpg';
 import Blog from './img/projets/Blog.jpg';
 import CardFlipRevise from './img/projets/CardFlipRevise.jpg';
 import GestionnaireDeBibliotheque from './img/projets/LibraryManager.jpg';
