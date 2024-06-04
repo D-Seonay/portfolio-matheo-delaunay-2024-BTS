@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import ControlConformite1 from '../pdf/2024-DELAUNAY-Matheo-SLAM-1.pdf';
 import ControlConformite2 from '../pdf/2024-DELAUNAY-Matheo-SLAM-2.pdf';
 import PortefeuilleCompetences from '../pdf/2024-DELAUNAY-Matheo-Portefeuille.pdf';
+import Diaporama from '../pdf/E4.pdf';
 
 // Conteneur centré pour le placement des cartes
 const CenteredContainer = styled.div`
@@ -73,6 +74,10 @@ const Bts = () => (
       <Card href={PortefeuilleCompetences} target="_blank" rel="noopener noreferrer">
         <h2>Portefeuille de compétences</h2>
         <p>Les compétences à acquérir au cours de ma formation.</p>
+      </Card>
+      <Card href={Diaporama} target="_blank" rel="noopener noreferrer">
+        <h2>Diaporama</h2>
+        <p>Diaporama de présentation de mon projet.</p>
       </Card>
     </CardGrid>
   </CenteredContainer>
