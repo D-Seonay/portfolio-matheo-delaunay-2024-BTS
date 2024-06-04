@@ -21,12 +21,18 @@ const CenteredContainer = styled.div`
 const CardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   gap: 20px;
 
   // Adaptation pour les écrans plus petits
   @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -78,6 +84,13 @@ const Bts = () => (
       <Card href={Diaporama} target="_blank" rel="noopener noreferrer">
         <h2>Diaporama</h2>
         <p>Diaporama de présentation de mon projet.</p>
+      </Card>
+
+      <Card href='https://e4-matheo-delaunay.my.canva.site/'
+        target="_blank"
+        rel="noopener noreferrer">
+        <h2>Site Diaporama</h2>
+        <p>Site de présentation de mon projet.</p>
       </Card>
     </CardGrid>
   </CenteredContainer>
